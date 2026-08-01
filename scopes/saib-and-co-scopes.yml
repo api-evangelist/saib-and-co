@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://saibnco.com/.well-known/openid-configuration
+docs: https://developers.cafe24.com/app/front/app/develop/oauth
+notes: >-
+  OAuth scopes advertised by the SAIB & Co. Cafe24 storefront (UCP) OpenID
+  Connect discovery document (scopes_supported). These are Cafe24 Unified
+  Commerce Platform storefront scopes exposed for this mall.
+schemes:
+- name: cafe24StorefrontOAuth
+  source: well-known/saib-and-co-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://saibnco.cafe24api.com/api/v2/oauth/authorize
+    tokenUrl: https://saibnco.cafe24api.com/api/v2/oauth/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication; return an ID token for the shopper.
+  flows: [authorizationCode]
+  sources: [well-known/saib-and-co-openid-configuration.json]
+- scope: dev.ucp.shopping.checkout:manage
+  description: Manage the storefront checkout for the shopper.
+  flows: [authorizationCode]
+  sources: [well-known/saib-and-co-openid-configuration.json]
+- scope: dev.ucp.shopping.cart:manage
+  description: Manage the shopper's shopping cart.
+  flows: [authorizationCode]
+  sources: [well-known/saib-and-co-openid-configuration.json]
+- scope: dev.ucp.shopping.order:read
+  description: Read the shopper's orders.
+  flows: [authorizationCode]
+  sources: [well-known/saib-and-co-openid-configuration.json]
+- scope: dev.ucp.shopping.catalog.search:read
+  description: Search the storefront product catalog.
+  flows: [authorizationCode]
+  sources: [well-known/saib-and-co-openid-configuration.json]
+- scope: dev.ucp.shopping.catalog.lookup:read
+  description: Look up individual products in the storefront catalog.
+  flows: [authorizationCode]
+  sources: [well-known/saib-and-co-openid-configuration.json]

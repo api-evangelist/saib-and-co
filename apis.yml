@@ -1,7 +1,29 @@
 aid: saib-and-co
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/saib-and-co.png
 name: SAIB & Co.
-description: SAIB & Co. is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  SAIB (Save & Co.) is a Seoul-based Korean intimate cosmetics and wellness
+  brand focused on female empowerment, offering premium condoms and solid
+  feminine cleansing products made with proprietary, health-conscious
+  ingredients such as CranProB. The brand donates 10% of sales revenue to
+  campaigns supporting gender equality and women's rights. SAIB sells
+  direct-to-consumer through a Cafe24-hosted storefront (saibnco.com); its
+  only programmatic surface is the Cafe24 Unified Commerce Platform (UCP)
+  storefront, which exposes an OpenID Connect discovery document and an
+  OAuth 2.0 / OIDC storefront API for this mall. Surfaced as a portfolio
+  company of 500 Global and enriched into the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/saib-and-co/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +33,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Cosmetics
+- Consumer Goods
+- E-Commerce
+- Wellness
+- Retail
+- Cafe24
+- OAuth
+apis:
+- name: SAIB & Co. Cafe24 Storefront API
+  description: >-
+    OAuth 2.0 / OpenID Connect storefront surface for the SAIB & Co. mall on the
+    Cafe24 Unified Commerce Platform (UCP). Advertised via the mall's live
+    OpenID Connect discovery document; supports authorization-code flow with
+    PKCE and shopping scopes for catalog search/lookup, cart, checkout, and
+    order read.
+  humanURL: https://developers.cafe24.com/app/front/app/develop/oauth
+  baseURL: https://saibnco.cafe24api.com/api/v2
+  tags:
+  - OAuth
+  - OpenID Connect
+  - E-Commerce
+  - Storefront
+  properties:
+  - type: WellKnown
+    url: well-known/saib-and-co-well-known.yml
+  - type: Authentication
+    url: authentication/saib-and-co-authentication.yml
+  - type: OAuthScopes
+    url: scopes/saib-and-co-scopes.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +73,22 @@ maintainers:
 common:
 - type: Website
   url: https://saibnco.com
+- type: TermsOfService
+  url: https://saibnco.com/member/agreement.html
+- type: PrivacyPolicy
+  url: https://saibnco.com/member/privacy.html
+- type: Support
+  url: https://saibnco.com/board/faq2.html
+- type: WellKnown
+  url: well-known/saib-and-co-well-known.yml
+- type: Authentication
+  url: authentication/saib-and-co-authentication.yml
+- type: OAuthScopes
+  url: scopes/saib-and-co-scopes.yml
+- type: DomainSecurity
+  url: security/saib-and-co-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

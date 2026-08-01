@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: live fetch of /.well-known/ on saibnco.com and saibnco.cafe24api.com
+notes: >-
+  saibnco.com is a Cafe24 (Unified Commerce Platform) storefront. Its OpenID
+  Connect discovery document is served for this specific mall and points the
+  OAuth/OIDC surface at the Cafe24 Storefront API host saibnco.cafe24api.com.
+hosts:
+- host: https://saibnco.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: saib-and-co-openid-configuration.json
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://saibnco.cafe24api.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+  - path: /api/v2/.well-known/jwks.json
+    status: 200

@@ -1,0 +1,50 @@
+generated: '2026-07-21'
+method: searched
+source: https://saibnco.com/.well-known/openid-configuration
+docs: https://developers.cafe24.com/app/front/app/develop/oauth
+notes: >-
+  Authentication is provided by the Cafe24 Unified Commerce Platform (UCP)
+  Storefront OAuth for the SAIB & Co. mall. Values below are taken verbatim
+  from the mall's live OpenID Connect discovery document; the issuer is the
+  mall-scoped Cafe24 API host saibnco.cafe24api.com.
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [authorizationCode]
+  pkce: [S256]
+  oidc_issuer: https://saibnco.cafe24api.com
+schemes:
+- name: cafe24StorefrontOAuth
+  type: oauth2
+  flow: authorizationCode
+  authorizationUrl: https://saibnco.cafe24api.com/api/v2/oauth/authorize
+  tokenUrl: https://saibnco.cafe24api.com/api/v2/oauth/token
+  revocationUrl: https://saibnco.cafe24api.com/api/v2/oauth/revoke
+  token_endpoint_auth_methods: [client_secret_basic, none]
+  code_challenge_methods: [S256]
+  grant_types: [authorization_code, refresh_token]
+  sources: [well-known/saib-and-co-openid-configuration.json]
+- name: cafe24OpenIDConnect
+  type: openIdConnect
+  openIdConnectUrl: https://saibnco.com/.well-known/openid-configuration
+  issuer: https://saibnco.cafe24api.com
+  userinfo_endpoint: https://saibnco.cafe24api.com/api/v2/customers/userinfo
+  jwks_uri: https://saibnco.cafe24api.com/api/v2/.well-known/jwks.json
+  id_token_signing_alg_values: [RS256]
+  claims_supported:
+  - iss
+  - sub
+  - aud
+  - exp
+  - iat
+  - jti
+  - at_hash
+  - auth_time
+  - nonce
+  - amr
+  - mall.name
+  - mall.email
+  - mall.gender
+  - mall.birthdate
+  - mall.phone_number
+  - mall.address
+  sources: [well-known/saib-and-co-openid-configuration.json]

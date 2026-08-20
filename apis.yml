@@ -42,6 +42,15 @@ tags:
 - Wellness
 - Retail
 - Cafe24
+- Authentication
+tags_raw:
+- Company
+- Cosmetics
+- Consumer Goods
+- E-Commerce
+- Wellness
+- Retail
+- Cafe24
 - OAuth
 apis:
 - name: SAIB & Co. Cafe24 Storefront API
@@ -54,6 +63,11 @@ apis:
   humanURL: https://developers.cafe24.com/app/front/app/develop/oauth
   baseURL: https://saibnco.cafe24api.com/api/v2
   tags:
+  - Authentication
+  - OpenID Connect
+  - E-Commerce
+  - Storefront
+  tags_raw:
   - OAuth
   - OpenID Connect
   - E-Commerce

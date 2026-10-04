@@ -90,6 +90,9 @@ apis:
     url: authentication/saib-and-co-authentication.yml
   - type: OAuthScopes
     url: scopes/saib-and-co-scopes.yml
+  x-surface: platform-generated
+  x-platform: cafe24
+  x-platform-surface: storefront
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

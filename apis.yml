@@ -44,7 +44,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 tags:
 - Company
 - Cosmetics
@@ -99,6 +99,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://saibnco.com/rss.xml
+  type: BlogRSS
 - type: Website
   url: https://saibnco.com
 - type: TermsOfService

@@ -64,6 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-SAIB & Co. is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+SAIB (Save & Co.) is a Seoul-based Korean intimate cosmetics and wellness brand focused on female empowerment, offering premium condoms and solid feminine cleansing products made with proprietary, health-conscious ingredients such as CranProB. The brand donates 10% of sales revenue to campaigns supporting gender equality and women's rights. SAIB sells direct-to-consumer through a Cafe24-hosted storefront (saibnco.com); its only programmatic surface is the Cafe24 Unified Commerce Platform (UCP) storefront, which exposes an OpenID Connect discovery document and an OAuth 2.0 / OIDC storefront API for this mall. Surfaced as a portfolio company of 500 Global and enriched into the API Evangelist network.
 
-Backed by: 500-global — https://saibnco.com
+**Areas:** Company · Cosmetics · Consumer Goods · E-Commerce · Wellness · Retail · Cafe24 · Authentication
+
+## SAIB & Co. on APIs.io
+
+Everything profiled for SAIB & Co. is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/saib-and-co/](https://apis.io/providers/saib-and-co/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [SAIB & Co. Cafe24 Storefront API](https://apis.io/apis/saib-and-co/saib-co-cafe24-storefront-api/) — OAuth 2.0 / OpenID Connect storefront surface for the SAIB & Co. mall on the Cafe24 Unified Commerce Platform (UCP). Advertised via the mall's live OpenID…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Saib And Co Authentication](https://apis.io/security/saib-and-co/saib-and-co-authentication/)
+- [Saib And Co Domain Security](https://apis.io/security/saib-and-co/saib-and-co-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Saib And Co Scopes](https://apis.io/scopes/saib-and-co/saib-and-co-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://saibnco.com)
+- [Support](https://saibnco.com/board/faq2.html)
+- [Terms of service](https://saibnco.com/member/agreement.html)
+- [Privacy policy](https://saibnco.com/member/privacy.html)
+
+## API Evangelist rating
+
+**Kin Score 16.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 21.1 |
+
+**Agent readiness 10.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/saib-and-co/](https://apis.io/providers/saib-and-co/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SAIB & Co.: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/saib-and-co/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
